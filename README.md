@@ -1,5 +1,3 @@
-# Voice Assistant
-
 # Jarvis – AI Voice Assistant
 
 Jarvis is a Python-based voice assistant that listens to your commands, responds with AI-generated answers, and speaks them out loud. It uses OpenRouter (ChatGPT) for generating responses, SpeechRecognition for input, and pyttsx3 for voice output.
@@ -23,7 +21,80 @@ Jarvis is a Python-based voice assistant that listens to your commands, responds
 
 ## Installation
 
-1. **Clone this repo**
+### 1. Clone this repo
+
 ```bash
 git clone https://github.com/Aditya4453/jarvis-voice-assistant.git
 cd jarvis-voice-assistant
+```
+
+---
+
+## Overview
+
+This project uses:
+- **SpeechRecognition** – to capture your voice
+- **Requests & JSON** – to fetch AI responses using OpenRouter API
+- **pyttsx3** – to convert AI response to spoken voice (offline text-to-speech)
+
+Jarvis starts when you say **"Hey Jarvis"** and responds to your voice inputs. It keeps the conversation alive until you tell it to stop.
+
+---
+
+## Setup & Installation
+
+### 2. Install Required Libraries
+
+Open your terminal or command prompt and run the following commands one by one:
+
+```bash
+pip install SpeechRecognition
+pip install requests
+pip install pyttsx3
+```
+
+---
+
+### 3. Get Your Free API Key from OpenRouter
+
+Jarvis uses ChatGPT via OpenRouter. Here’s how to get your API key:
+
+1. Go to [OpenRouter](https://openrouter.ai)
+2. Create a free account.
+3. Go to the API Keys section.
+4. Generate a new API key and copy it.
+
+---
+
+### 4. Paste the API Key in the Code
+
+Open your Python file (example: `assistant2.py`) and locate this part:
+
+```python
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY_HERE",
+    "Content-Type": "application/json"
+}
+```
+
+Replace `YOUR_API_KEY_HERE` with the actual API key you copied from OpenRouter.
+
+---
+
+### 5. Run the Program
+
+Now, just run your Python script:
+
+```bash
+python assistant2.py
+```
+
+Say "Hey Jarvis" to start the conversation. Then speak naturally. Jarvis will listen, reply with an AI-generated response, and speak it back to you.
+
+To stop the assistant, simply say:
+
+```
+stop
+exit
+goodbye
+```
