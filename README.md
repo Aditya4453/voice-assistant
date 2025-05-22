@@ -1,34 +1,29 @@
 # Voice Assistant
 
-## Overview
-This project implements a voice assistant using Python. It utilizes speech recognition and text-to-speech libraries to enable interaction with users through voice commands. The assistant can listen for a wake word, respond to user queries, and communicate with an AI model for generating responses.
+# Jarvis – AI Voice Assistant
+
+Jarvis is a Python-based voice assistant that listens to your commands, responds with AI-generated answers, and speaks them out loud. It uses OpenRouter (ChatGPT) for generating responses, SpeechRecognition for input, and pyttsx3 for voice output.
+
+---
+
+## Features
+
+- **Voice-activated**: Starts on saying "Hey Jarvis".
+- **Conversational**: Continues chatting until you say “exit”, “stop”, or “goodbye”.
+- **Free AI API**: Works with [OpenRouter](https://openrouter.ai/) – no OpenAI subscription needed.
+- **Text-to-Speech Output**: Answers are spoken aloud using `pyttsx3`.
+
+---
+
+## Demo
+
+*Coming soon: Add a GIF or YouTube video link here showing Jarvis in action.*
+
+---
 
 ## Installation
-To run this project, you need to have Python installed on your machine. Additionally, you will need to install the following libraries:
 
-- `speech_recognition`
-- `pyttsx3`
-- `requests`
-
-You can install these libraries using pip:
-
-```
-pip install SpeechRecognition pyttsx3 requests
-```
-
-## Usage
-1. Clone the repository to your local machine.
-2. Navigate to the project directory.
-3. Run the assistant using Python:
-
-```
-python assistant2.py
-```
-
-4. Say the wake word "hey Jarvis" to activate the assistant and start interacting with it.
-
-## Contributing
-Feel free to fork the repository and submit pull requests for any improvements or features you would like to add.
-
-## License
-This project is open-source and available under the MIT License.
+1. **Clone this repo**
+```bash
+git clone https://github.com/Aditya4453/jarvis-voice-assistant.git
+cd jarvis-voice-assistant
