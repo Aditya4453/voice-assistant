@@ -33,17 +33,17 @@ def listen():
 
 def chat_with_ai(user_input):
 
-    api_key = "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"  # Replace with your real key
+    api_key = "{YOUR API KEY}"  # Replace with your real key
 
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
-        "HTTP-Referer": "https://github.com/Aditya4453",  # Replace with your own domain or GitHub link
+        "HTTP-Referer": "{https:}",  # Replace with your own domain or GitHub link
         "X-Title": "Test Chat",
     }
 
     data = {
-        "model": "openai/gpt-3.5-turbo-0613",  # You can also try "mistralai/mixtral-8x7b"
+        "model": "openai/gpt-3.5-turbo-0613",  
         "messages": [
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": user_input},
@@ -69,7 +69,7 @@ def main():
         print("\n[ Waiting for activation... ]")
         print("speak the wake word now...")
         heard = listen()
-        if WAKE_WORD in heard or True:  # if wake word detected or key pressed
+        if WAKE_WORD in heard or True:  
             speak("Yes Aditya, I’m listening...")
             user_query = ""
             while user_query not in ["stop", "exit", "goodbye"]:
