@@ -1,4 +1,5 @@
 # Jarvis – AI Voice Assistant
+While casually scrolling one day, I discovered that our laptops and computers have built-in features and software that can convert typed text into speech. That sparked an idea — what if I could reverse this? What if I say something, convert my voice into text, send that text to an AI model to get a response, and then use text-to-speech to make the system speak the answer out loud? That simple curiosity turned into a spark, and from there, I decided to start researching and building my own version of a virtual assistant.
 
 Jarvis is a Python-based voice assistant that listens to your commands, responds with AI-generated answers, and speaks them out loud. It uses OpenRouter (ChatGPT) for generating responses, SpeechRecognition for input, and pyttsx3 for voice output.
 
